@@ -1,4 +1,5 @@
 .venv/
+Icon\r
 *.pyc
 .DS_Store
 __pycache__/
