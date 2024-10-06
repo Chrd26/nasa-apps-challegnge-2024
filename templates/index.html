@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drought History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Drought history</h1>  
+            <h2>Find the drought history of a location</h2>
+            <div style="margin-top:10rem;">
+                <form action="get-info" method="post">
+                    <div style="display:flex; flex-direction:column;">
+                        <label for="location-input" style="text-align:center; margin-bottom:1rem; font-size:20px;">Location</label>
+                        <input class="one-fourth-size-center" type="text" id="location-input" name="location-input">
+                        <input class="one-fourth-size-center" type="submit" name="submit">
+                    </div>
+                </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
