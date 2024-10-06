@@ -27,7 +27,7 @@ async def ShowInfo():
     if not results.isLocationFound:
         return render_template('index.html')
 
-    return "<h1>Hello!</h1>"
+    return render_template('result.html', name_location = location)
 
 if __name__ == '__main__':
     run(app)

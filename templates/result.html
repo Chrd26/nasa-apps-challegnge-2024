@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drought History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+    <h1 style="color:white; background:black; width:25%; padding-top:1rem; padding-bottom:1rem; text-align:center;">{{ name_location }}</h1>
+    <body style="background-image: url({{ url_for('static', filename='result.tiff') }}); padding:0; margin:0; overflow:hidden; background-repeat: no-repeat; background-size:cover;">
+    <script src="index.js"></script>
+  </body>
+</html>
