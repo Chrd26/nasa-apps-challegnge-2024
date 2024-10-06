@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
-    <h1 style="color:white; background:black; width:25%; padding-top:1rem; padding-bottom:1rem; text-align:center;">{{ name_location }}</h1>
-    <body style="background-image: url({{ url_for('static', filename='result.tiff') }}); padding:0; margin:0; overflow:hidden; background-repeat: no-repeat; background-size:cover;">
+    <h1 style="color:white; background:black; width:25%; padding-top:1rem; padding-bottom:1rem; text-align:center; position:sticky;">{{ name_location }}</h1>
+    <body style="background-image: url({{ url_for('static', filename='result.tiff') }}); padding:0; margin:0; background-repeat: no-repeat; background-size:cover;">
+        <div style="color:white; background:#000000BB; width:25%; margin-top:40%;"><p>Information about how to read the results</p></div> 
     <script src="index.js"></script>
   </body>
 </html>
