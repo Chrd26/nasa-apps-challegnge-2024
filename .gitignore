@@ -17,3 +17,5 @@ env/
 *.swp
 *~
 result.tiff
+copy-main.py
+
